@@ -3,6 +3,7 @@ import os
 
 # Load your trained weights
 model = YOLO("runs/detect/yolov8_coco128/weights/best.pt")
+#model.to("cpu")
 
 # Run inference on a test image
 results = model("coco128/images/train/000000000009.jpg")
